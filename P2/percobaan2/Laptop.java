@@ -1,6 +1,7 @@
 package percobaan2;
 
 public class Laptop {
+
     public String kodeInventaris;
     public String merk;
     public int ramGB;
@@ -12,7 +13,11 @@ public class Laptop {
     }
 
     public int upgradeRam(int tambahanGB) {
-        int ramBaru = ramGB + tambahanGB;
-        return ramBaru;
+        ramGB = ramGB + tambahanGB;
+        return ramGB;
+    }
+
+    public int hitungHargaSewa(int jumlahHari) {
+        return jumlahHari * 25000;
     }
 }

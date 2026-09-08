@@ -11,7 +11,9 @@ public class TestLaptop {
         lab1.tampilSpesifikasi();
 
         int ramSetelahUpgrade = lab1.upgradeRam(8);
-
         System.out.println("RAM setelah upgrade : " + ramSetelahUpgrade + " GB");
+
+        int hargaSewa = lab1.hitungHargaSewa(3);
+        System.out.println("Harga sewa : Rp" + hargaSewa);
     }
 }
