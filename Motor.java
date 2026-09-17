@@ -13,7 +13,7 @@ public class Motor {
 
     public void tambahKecepatan() {
         if (kontakOn == true) {
-            kecepatan += 5;
+            kecepatan += 50;
         } else {
             System.out.println("Kecepatan tidak bisa bertambah karena mesin off\n");
         }
@@ -21,7 +21,7 @@ public class Motor {
 
     public void kurangiKecepatan() {
         if (kontakOn == true) {
-            kecepatan -= 5;
+            kecepatan -= 50;
         } else {
             System.out.println("Kecepatan tidak bisa berkurang karena mesin off\n");
         }
