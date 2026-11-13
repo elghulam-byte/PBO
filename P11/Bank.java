@@ -41,6 +41,14 @@ public class Bank {
         }
     }
 
+    public double totalAssets() {
+        double total = 0;
+        for (Account acc : repository.findAll()) {
+            total += acc.getBalance();
+        }
+        return total;
+    }
+
     public void printHistory(String accountNumber) {
         Account acc = findAccount(accountNumber);
         if (acc == null) {
